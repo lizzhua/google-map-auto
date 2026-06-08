@@ -29,8 +29,18 @@ cache/
 .env.local
 .env.*.local
 
+# Data files (research data, not for public repo)
+*.xlsx
+*.csv
+*.xls
+
+# Cache
+cache/
+
+# Claude
+.claude/
+
 # API Keys and Secrets
-**/py.py
-**/ｙ.py
+.env
 secrets.json
 config.local.py

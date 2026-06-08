@@ -1,8 +1,9 @@
+import os
 import pandas as pd
 import requests
 import time
 
-API_KEY = "AIzaSyB1v7S-_94XV6x4JlODRGhpBm57pJHwVLk"  # ← ← ← 請改成你的金鑰
+API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
 
 # 🚦 自動分類函數：依 types 分類
 def classify_place(types_string):
